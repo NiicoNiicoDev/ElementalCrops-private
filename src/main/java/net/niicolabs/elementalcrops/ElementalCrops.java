@@ -105,6 +105,7 @@ public class ElementalCrops
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
             event.accept(Moditems.ALPHINIUM_ESSENCE);
+            event.accept(Moditems.ALPHINIUM_SEEDS);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

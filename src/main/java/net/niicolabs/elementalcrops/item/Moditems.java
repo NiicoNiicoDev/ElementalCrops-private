@@ -12,7 +12,10 @@ public class Moditems {
             DeferredRegister.create(ForgeRegistries.ITEMS, ElementalCrops.MOD_ID);
 
     public static final RegistryObject<Item> ALPHINIUM_ESSENCE =
-            ITEMS.register("tier_1_essence", () -> new Item(new Item.Properties()))
+            ITEMS.register("tier_1_essence", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ALPHINIUM_SEEDS =
+            ITEMS.register("tier_1_seeds", () -> new Item(new Item.Properties()));
 ;    public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

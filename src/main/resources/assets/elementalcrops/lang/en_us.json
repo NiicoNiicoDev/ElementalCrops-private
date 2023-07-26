@@ -1,3 +1,6 @@
 {
-  "item.elementalcrops.tier_1_essence": "Alphinium Essence"
+  "item.elementalcrops.tier_1_essence": "Alphinium Essence",
+  "item.elementalcrops.tier_1_seeds": "Alphinium Seeds",
+
+  "creativetab.elementalcrops.tab": "Elemental Crops"
 }
