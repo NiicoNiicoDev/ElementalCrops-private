@@ -27,6 +27,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.niicolabs.elementalcrops.block.ModBlock;
+import net.niicolabs.elementalcrops.item.ModCreativeModeTabs;
 import net.niicolabs.elementalcrops.item.Moditems;
 import org.slf4j.Logger;
 
@@ -67,15 +69,12 @@ public class ElementalCrops
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         Moditems.register(modEventBus);
+        ModBlock.register(modEventBus);
+
+        ModCreativeModeTabs.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
-        // Register the Deferred Register to the mod event bus so blocks get registered
-        BLOCKS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so items get registered
-        ITEMS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so tabs get registered
-        CREATIVE_MODE_TABS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -103,9 +102,6 @@ public class ElementalCrops
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
-            event.accept(Moditems.ALPHINIUM_ESSENCE);
-            event.accept(Moditems.ALPHINIUM_SEEDS);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

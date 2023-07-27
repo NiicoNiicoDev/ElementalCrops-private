@@ -1,6 +1,29 @@
 {
-  "item.elementalcrops.tier_1_essence": "Alphinium Essence",
-  "item.elementalcrops.tier_1_seeds": "Alphinium Seeds",
+  "item.elementalcrops.essence.base.tier_1_essence": "Alphinium Essence",
+  "item.elementalcrops.essence.base.tier_2_essence": "Betarium Essence",
+  "item.elementalcrops.essence.base.tier_3_essence": "Gamium Essence",
+  "item.elementalcrops.essence.base.tier_4_essence": "Delterium Essence",
+  "item.elementalcrops.essence.base.tier_5_essence": "Epsilium Essence",
+  "item.elementalcrops.essence.base.tier_6_essence": "Zeterium Essence",
+  "item.elementalcrops.essence.base.tier_7_essence": "Etarium Essence",
+  "item.elementalcrops.essence.base.tier_8_essence": "Therium Essence",
+  "item.elementalcrops.essence.base.tier_9_essence": "Iotium Essence",
+  "item.elementalcrops.essence.base.tier_10_essence": "Kaparium Essence",
+  "item.elementalcrops.essence.base.tier_11_essence": "Lambidium Essence",
+  "item.elementalcrops.essence.base.tier_12_essence": "Omicronium Essence",
+
+  "item.elementalcrops.essence.base.tier_1_seeds": "Alphinium Seeds",
+  "item.elementalcrops.essence.base.tier_2_seeds": "Betarium Seeds",
+  "item.elementalcrops.essence.base.tier_3_seeds": "Gamium Seeds",
+  "item.elementalcrops.essence.base.tier_4_seeds": "Delterium Seeds",
+  "item.elementalcrops.essence.base.tier_5_seeds": "Epsilium Seeds",
+  "item.elementalcrops.essence.base.tier_6_seeds": "Zeterium Seeds",
+  "item.elementalcrops.essence.base.tier_7_seeds": "Etarium Seeds",
+  "item.elementalcrops.essence.base.tier_8_seeds": "Therium Seeds",
+  "item.elementalcrops.essence.base.tier_9_seeds": "Iotium Seeds",
+  "item.elementalcrops.essence.base.tier_10_seeds": "Kaparium Seeds",
+  "item.elementalcrops.essence.base.tier_11_seeds": "Lambidium Seeds",
+  "item.elementalcrops.essence.base.tier_12_seeds": "Omicronium Seeds",
 
   "creativetab.elementalcrops.tab": "Elemental Crops"
 }

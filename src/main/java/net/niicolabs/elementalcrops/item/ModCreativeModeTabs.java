@@ -15,11 +15,34 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> ELEMENTALCROPS_TAB =
             CREATIVE_MODE_TABS.register("elementalcrops_tab", () ->
-                    CreativeModeTab.builder().icon(() -> new ItemStack(Moditems.ALPHINIUM_ESSENCE.get()))
+                    CreativeModeTab.builder().icon(() -> new ItemStack(Moditems.TIER_1_ESSENCE.get()))
                             .title(Component.translatable("creativetab.elementalcrops.tab"))
                             .displayItems((pParameters, pOutput) -> {
-                                pOutput.accept(Moditems.ALPHINIUM_ESSENCE.get());
-                                pOutput.accept(Moditems.ALPHINIUM_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_1_ESSENCE.get());
+                                pOutput.accept(Moditems.TIER_2_ESSENCE.get());
+                                pOutput.accept(Moditems.TIER_3_ESSENCE.get());
+                                pOutput.accept(Moditems.TIER_4_ESSENCE.get());
+                                pOutput.accept(Moditems.TIER_5_ESSENCE.get());
+                                pOutput.accept(Moditems.TIER_6_ESSENCE.get());
+                                pOutput.accept(Moditems.TIER_7_ESSENCE.get());
+                                pOutput.accept(Moditems.TIER_8_ESSENCE.get());
+                                pOutput.accept(Moditems.TIER_9_ESSENCE.get());
+                                pOutput.accept(Moditems.TIER_10_ESSENCE.get());
+                                pOutput.accept(Moditems.TIER_11_ESSENCE.get());
+                                pOutput.accept(Moditems.TIER_12_ESSENCE.get());
+
+                                pOutput.accept(Moditems.TIER_1_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_2_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_3_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_4_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_5_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_6_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_7_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_8_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_9_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_10_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_11_SEEDS.get());
+                                pOutput.accept(Moditems.TIER_12_SEEDS.get());
                             })
                             .build());
     public static void register(IEventBus eventBus) {
