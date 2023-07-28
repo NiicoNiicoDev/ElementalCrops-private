@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "elementalcrops:item/essence/tier_5"
+    "layer0": "elementalcrops:item/essence/base/tier_5"
   }
 }

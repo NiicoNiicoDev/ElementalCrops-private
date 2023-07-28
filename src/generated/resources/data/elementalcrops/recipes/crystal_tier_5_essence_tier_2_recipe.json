@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "elementalcrops:essence/base/tier_1_essence"
+    },
+    {
+      "item": "elementalcrops:essence/base/tier_1_essence"
+    },
+    {
+      "item": "elementalcrops:essence/base/tier_1_essence"
+    },
+    {
+      "item": "elementalcrops:essence/base/tier_1_essence"
+    },
+    {
+      "item": "elementalcrops:essence/base/tier_1_essence"
+    },
+    {
+      "item": "elementalcrops:essence/base/tier_1_essence"
+    },
+    {
+      "item": "elementalcrops:essence/base/tier_1_essence"
+    },
+    {
+      "item": "elementalcrops:essence/base/tier_1_essence"
+    },
+    {
+      "item": "elementalcrops:crystals/primal_conversion_crystal"
+    }
+  ],
+  "result": {
+    "item": "elementalcrops:essence/base/tier_2_essence"
+  }
+}

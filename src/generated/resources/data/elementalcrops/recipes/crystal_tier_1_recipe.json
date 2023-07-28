@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:diamond_block"
+    },
+    "C": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "elementalcrops:essence/base/tier_1_essence"
+    }
+  },
+  "pattern": [
+    "BEB",
+    "ECE",
+    "BEB"
+  ],
+  "result": {
+    "item": "elementalcrops:crystals/basic_conversion_crystal"
+  },
+  "show_notification": true
+}

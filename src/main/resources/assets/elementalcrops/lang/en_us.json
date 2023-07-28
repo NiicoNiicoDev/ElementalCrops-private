@@ -12,18 +12,26 @@
   "item.elementalcrops.essence.base.tier_11_essence": "Lambidium Essence",
   "item.elementalcrops.essence.base.tier_12_essence": "Omicronium Essence",
 
-  "item.elementalcrops.essence.base.tier_1_seeds": "Alphinium Seeds",
-  "item.elementalcrops.essence.base.tier_2_seeds": "Betarium Seeds",
-  "item.elementalcrops.essence.base.tier_3_seeds": "Gamium Seeds",
-  "item.elementalcrops.essence.base.tier_4_seeds": "Delterium Seeds",
-  "item.elementalcrops.essence.base.tier_5_seeds": "Epsilium Seeds",
-  "item.elementalcrops.essence.base.tier_6_seeds": "Zeterium Seeds",
-  "item.elementalcrops.essence.base.tier_7_seeds": "Etarium Seeds",
-  "item.elementalcrops.essence.base.tier_8_seeds": "Therium Seeds",
-  "item.elementalcrops.essence.base.tier_9_seeds": "Iotium Seeds",
-  "item.elementalcrops.essence.base.tier_10_seeds": "Kaparium Seeds",
-  "item.elementalcrops.essence.base.tier_11_seeds": "Lambidium Seeds",
-  "item.elementalcrops.essence.base.tier_12_seeds": "Omicronium Seeds",
+  "item.elementalcrops.seeds.base.tier_1_seeds": "Alphinium Seeds",
+  "item.elementalcrops.seeds.base.tier_2_seeds": "Betarium Seeds",
+  "item.elementalcrops.seeds.base.tier_3_seeds": "Gamium Seeds",
+  "item.elementalcrops.seeds.base.tier_4_seeds": "Delterium Seeds",
+  "item.elementalcrops.seeds.base.tier_5_seeds": "Epsilium Seeds",
+  "item.elementalcrops.seeds.base.tier_6_seeds": "Zeterium Seeds",
+  "item.elementalcrops.seeds.base.tier_7_seeds": "Etarium Seeds",
+  "item.elementalcrops.seeds.base.tier_8_seeds": "Therium Seeds",
+  "item.elementalcrops.seeds.base.tier_9_seeds": "Iotium Seeds",
+  "item.elementalcrops.seeds.base.tier_10_seeds": "Kaparium Seeds",
+  "item.elementalcrops.seeds.base.tier_11_seeds": "Lambidium Seeds",
+  "item.elementalcrops.seeds.base.tier_12_seeds": "Omicronium Seeds",
+
+  "item.elementalcrops.crystals.basic_conversion_crystal": "Basic Conversion Crystal",
+  "item.elementalcrops.crystals.advanced_conversion_crystal": "Advanced Conversion Crystal",
+  "item.elementalcrops.crystals.master_conversion_crystal": "Master Conversion Crystal",
+  "item.elementalcrops.crystals.perfected_conversion_crystal": "Perfected Conversion Crystal",
+  "item.elementalcrops.crystals.primal_conversion_crystal": "Primal Conversion Crystal",
+
+  "block.elementalcrops.blocks.essence.tier_1_essence_block": "Block of Alphinium Essence",
 
   "creativetab.elementalcrops.tab": "Elemental Crops"
 }

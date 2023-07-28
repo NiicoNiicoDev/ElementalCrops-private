@@ -27,7 +27,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.niicolabs.elementalcrops.block.ModBlock;
+import net.niicolabs.elementalcrops.item.Custom.ModBlocks;
 import net.niicolabs.elementalcrops.item.ModCreativeModeTabs;
 import net.niicolabs.elementalcrops.item.Moditems;
 import org.slf4j.Logger;
@@ -69,7 +69,7 @@ public class ElementalCrops
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         Moditems.register(modEventBus);
-        ModBlock.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         ModCreativeModeTabs.register(modEventBus);
 

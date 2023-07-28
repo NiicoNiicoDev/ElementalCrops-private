@@ -6,11 +6,14 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.niicolabs.elementalcrops.ElementalCrops;
+import net.niicolabs.elementalcrops.item.Custom.ConversionCrystalItem;
 
-public class Moditems {
+public class Moditems
+{
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ElementalCrops.MOD_ID);
 
+    //region Essence Items
     public static final RegistryObject<Item> TIER_1_ESSENCE =
             ITEMS.register("essence/base/tier_1_essence", () -> new Item(new Item.Properties()));
 
@@ -45,9 +48,9 @@ public class Moditems {
 
     public static final RegistryObject<Item> TIER_12_ESSENCE =
             ITEMS.register("essence/base/tier_12_essence", () -> new Item(new Item.Properties()));
+    //endregion
 
-
-
+    //region Seed Items
     public static final RegistryObject<Item> TIER_1_SEEDS =
             ITEMS.register("seeds/base/tier_1_seeds", () -> new Item(new Item.Properties()));
 
@@ -84,6 +87,24 @@ public class Moditems {
     public static final RegistryObject<Item> TIER_12_SEEDS =
             ITEMS.register("seeds/base/tier_12_seeds", () -> new Item(new Item.Properties()));
 
+    //endregion
+
+    //region Conversion Crystals
+    public static final RegistryObject<ConversionCrystalItem> BASIC_CONVERSION_CRYSTAL =
+            ITEMS.register("crystals/basic_conversion_crystal", () -> new ConversionCrystalItem(new Item.Properties(),100, true, false));
+
+    public static final RegistryObject<ConversionCrystalItem> ADVANCED_CONVERSION_CRYSTAL =
+            ITEMS.register("crystals/advanced_conversion_crystal", () -> new ConversionCrystalItem(new Item.Properties(),250, true, false));
+
+    public static final RegistryObject<ConversionCrystalItem> MASTER_CONVERSION_CRYSTAL =
+            ITEMS.register("crystals/master_conversion_crystal", () -> new ConversionCrystalItem(new Item.Properties(),500, true, false));
+
+    public static final RegistryObject<ConversionCrystalItem> PERFECTED_CONVERSION_CRYSTAL =
+            ITEMS.register("crystals/perfected_conversion_crystal", () -> new ConversionCrystalItem(new Item.Properties(),2500, true, false));
+
+    public static final RegistryObject<ConversionCrystalItem> PRIMAL_CONVERSION_CRYSTAL =
+            ITEMS.register("crystals/primal_conversion_crystal", () -> new ConversionCrystalItem(new Item.Properties(),5000, false, false));
+    //endregion
 
 ;    public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

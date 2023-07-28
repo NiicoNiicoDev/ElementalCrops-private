@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.niicolabs.elementalcrops.ElementalCrops;
+import net.niicolabs.elementalcrops.item.Custom.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -43,6 +44,15 @@ public class ModCreativeModeTabs {
                                 pOutput.accept(Moditems.TIER_10_SEEDS.get());
                                 pOutput.accept(Moditems.TIER_11_SEEDS.get());
                                 pOutput.accept(Moditems.TIER_12_SEEDS.get());
+
+                                pOutput.accept(Moditems.BASIC_CONVERSION_CRYSTAL.get());
+                                pOutput.accept(Moditems.ADVANCED_CONVERSION_CRYSTAL.get());
+                                pOutput.accept(Moditems.MASTER_CONVERSION_CRYSTAL.get());
+                                pOutput.accept(Moditems.PERFECTED_CONVERSION_CRYSTAL.get());
+                                pOutput.accept(Moditems.PRIMAL_CONVERSION_CRYSTAL.get());
+
+                                pOutput.accept(ModBlocks.TIER_1_ESSENCE_BLOCK.get());
+
                             })
                             .build());
     public static void register(IEventBus eventBus) {

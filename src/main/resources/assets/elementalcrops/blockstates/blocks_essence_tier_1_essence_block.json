@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "elementalcrops:block/essence/base/tier_1_essence_block"
+    }
+  }
+}

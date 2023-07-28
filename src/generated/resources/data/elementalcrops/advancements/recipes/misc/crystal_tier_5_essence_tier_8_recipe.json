@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "elementalcrops:crystal_tier_5_essence_tier_8_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tier_7_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementalcrops:essence/base/tier_7_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_tier_7_essence",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "elementalcrops:crystal_tier_5_essence_tier_8_recipe"
+    ]
+  },
+  "sends_telemetry_event": false
+}
