@@ -1,25 +1,41 @@
-[29Jul2023 04:15:39.037] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\georg\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.1.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, elementalcrops, --all, --output, E:\Minecraft Mod #1\src\generated\resources, --existing, E:\Minecraft Mod #1\src\main\resources]
-[29Jul2023 04:15:39.041] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[29Jul2023 04:15:39.146] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[29Jul2023 04:15:39.189] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/georg/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[29Jul2023 04:15:39.519] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\georg\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.1.0\a2cd58d15791eaac9983e30be0995e66bd48633e\javafmllanguage-1.20.1-47.1.0.jar is missing mods.toml file
-[29Jul2023 04:15:39.521] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\georg\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.1.0\f1f11b7217b8320f1b3eb81c746b7b8a70a9ba06\lowcodelanguage-1.20.1-47.1.0.jar is missing mods.toml file
-[29Jul2023 04:15:39.524] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\georg\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.1.0\ff1b8eeb1bd00dfb130263b8952b931f5369252e\mclanguage-1.20.1-47.1.0.jar is missing mods.toml file
-[29Jul2023 04:15:39.526] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\georg\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.1.0\69ca36ae5b8d45c377a5485dc38a7343e5ebf33c\fmlcore-1.20.1-47.1.0.jar is missing mods.toml file
-[29Jul2023 04:15:39.581] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[29Jul2023 04:15:40.737] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\georg\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, elementalcrops, --all, --output, E:\Minecraft Mod #1\src\generated\resources, --existing, E:\Minecraft Mod #1\src\main\resources]
-[29Jul2023 04:15:41.250] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [elementalcrops]
-[29Jul2023 04:15:44.510] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.1.0, for MC 1.20.1 with MCP 20230612.114412
-[29Jul2023 04:15:44.514] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.0 Initialized
-[29Jul2023 04:15:44.842] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/georg/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.1.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[29Jul2023 04:15:44.842] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/georg/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.1.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[29Jul2023 04:15:45.005] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[29Jul2023 04:15:45.055] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 48 ms
-[29Jul2023 04:15:45.055] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[29Jul2023 04:15:45.117] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 61 ms
-[29Jul2023 04:15:45.117] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: elementalcrops
-[29Jul2023 04:15:45.210] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: elementalcrops finished after 93 ms
-[29Jul2023 04:15:45.210] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: elementalcrops
-[29Jul2023 04:15:45.219] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: elementalcrops finished after 9 ms
-[29Jul2023 04:15:45.219] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 214 ms
-[29Jul2023 04:15:45.227] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 221, old count: 221, new count: 222, removed stale: 0, written: 48
+[29Jul2023 07:40:10.090] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\georg\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.1.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, elementalcrops, --all, --output, E:\Minecraft Mod #1\src\generated\resources, --existing, E:\Minecraft Mod #1\src\main\resources]
+[29Jul2023 07:40:10.095] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[29Jul2023 07:40:10.218] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[29Jul2023 07:40:10.258] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/georg/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[29Jul2023 07:40:10.512] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\georg\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.1.0\a2cd58d15791eaac9983e30be0995e66bd48633e\javafmllanguage-1.20.1-47.1.0.jar is missing mods.toml file
+[29Jul2023 07:40:10.514] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\georg\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.1.0\f1f11b7217b8320f1b3eb81c746b7b8a70a9ba06\lowcodelanguage-1.20.1-47.1.0.jar is missing mods.toml file
+[29Jul2023 07:40:10.516] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\georg\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.1.0\ff1b8eeb1bd00dfb130263b8952b931f5369252e\mclanguage-1.20.1-47.1.0.jar is missing mods.toml file
+[29Jul2023 07:40:10.518] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\georg\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.1.0\69ca36ae5b8d45c377a5485dc38a7343e5ebf33c\fmlcore-1.20.1-47.1.0.jar is missing mods.toml file
+[29Jul2023 07:40:10.577] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[29Jul2023 07:40:11.758] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\georg\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, elementalcrops, --all, --output, E:\Minecraft Mod #1\src\generated\resources, --existing, E:\Minecraft Mod #1\src\main\resources]
+[29Jul2023 07:40:12.201] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [elementalcrops]
+[29Jul2023 07:40:15.368] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.1.0, for MC 1.20.1 with MCP 20230612.114412
+[29Jul2023 07:40:15.371] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.0 Initialized
+[29Jul2023 07:40:15.390] [modloading-worker-0/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Failed to create mod instance. ModID: elementalcrops, class net.niicolabs.elementalcrops.ElementalCrops
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:68) ~[javafmllanguage-1.20.1-47.1.0.jar%23192!/:?]
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$10(ModContainer.java:123) ~[fmlcore-1.20.1-47.1.0.jar%23195!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at net.niicolabs.elementalcrops.ElementalCrops.<init>(ElementalCrops.java:74) ~[%23196!/:?]
+	... 14 more
+Caused by: net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: elementalcrops:tier_1_essence_CROP
+	at net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:291) ~[forge-1.20.1-47.1.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/:?]
+	at net.minecraft.resources.ResourceLocation.<init>(ResourceLocation.java:53) ~[forge-1.20.1-47.1.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/:?]
+	at net.minecraftforge.registries.DeferredRegister.register(DeferredRegister.java:181) ~[forge-1.20.1-47.1.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23190%23197!/:?]
+	at net.niicolabs.elementalcrops.item.Custom.ModBlocks.registerBlock(ModBlocks.java:63) ~[%23196!/:?]
+	at net.niicolabs.elementalcrops.item.Custom.ModBlocks.<clinit>(ModBlocks.java:58) ~[%23196!/:?]
+	at net.niicolabs.elementalcrops.ElementalCrops.<init>(ElementalCrops.java:74) ~[%23196!/:?]
+	... 14 more
+[29Jul2023 07:40:15.534] [main/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event CONSTRUCT, 1 errors found

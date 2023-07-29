@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "elementalcrops:block/tier_1_essence_crop_stage0"
+  }
+}

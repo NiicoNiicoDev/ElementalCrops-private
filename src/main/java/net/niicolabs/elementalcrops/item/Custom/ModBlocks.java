@@ -22,36 +22,40 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, ElementalCrops.MOD_ID);
 
     //region Essence Blocks
-    public static final RegistryObject<Block> TIER_1_ESSENCE_BLOCK = registerBlock("tier_1_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
-    public static final RegistryObject<Block> TIER_2_ESSENCE_BLOCK = registerBlock("tier_2_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
-    public static final RegistryObject<Block> TIER_3_ESSENCE_BLOCK = registerBlock("tier_3_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
-    public static final RegistryObject<Block> TIER_4_ESSENCE_BLOCK = registerBlock("tier_4_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
-    public static final RegistryObject<Block> TIER_5_ESSENCE_BLOCK = registerBlock("tier_5_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
-    public static final RegistryObject<Block> TIER_6_ESSENCE_BLOCK = registerBlock("tier_6_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
-    public static final RegistryObject<Block> TIER_7_ESSENCE_BLOCK = registerBlock("tier_7_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
-    public static final RegistryObject<Block> TIER_8_ESSENCE_BLOCK = registerBlock("tier_8_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
-    public static final RegistryObject<Block> TIER_9_ESSENCE_BLOCK = registerBlock("tier_9_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
-    public static final RegistryObject<Block> TIER_10_ESSENCE_BLOCK = registerBlock("tier_10_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
-    public static final RegistryObject<Block> TIER_11_ESSENCE_BLOCK = registerBlock("tier_11_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
-    public static final RegistryObject<Block> TIER_12_ESSENCE_BLOCK = registerBlock("tier_12_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).destroyTime(0.2f)));
+    public static final RegistryObject<Block> TIER_1_ESSENCE_BLOCK = registerBlock("tier_1_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> TIER_2_ESSENCE_BLOCK = registerBlock("tier_2_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> TIER_3_ESSENCE_BLOCK = registerBlock("tier_3_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> TIER_4_ESSENCE_BLOCK = registerBlock("tier_4_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> TIER_5_ESSENCE_BLOCK = registerBlock("tier_5_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> TIER_6_ESSENCE_BLOCK = registerBlock("tier_6_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> TIER_7_ESSENCE_BLOCK = registerBlock("tier_7_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> TIER_8_ESSENCE_BLOCK = registerBlock("tier_8_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> TIER_9_ESSENCE_BLOCK = registerBlock("tier_9_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> TIER_10_ESSENCE_BLOCK = registerBlock("tier_10_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> TIER_11_ESSENCE_BLOCK = registerBlock("tier_11_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> TIER_12_ESSENCE_BLOCK = registerBlock("tier_12_essence_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     //endregion
 
     //region Essence Ores
     //region Essence Ores Default
-    public static final RegistryObject<Block> TIER_1_ESSENCE_ORE = registerBlock("tier_1_essence_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).destroyTime(0.2f), UniformInt.of(3,6)));
+    public static final RegistryObject<Block> TIER_1_ESSENCE_ORE = registerBlock("tier_1_essence_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE), UniformInt.of(3,6)));
     //endregion
 
     //region Essence Ores Deepslate
-    public static final RegistryObject<Block> TIER_1_ESSENCE_DEEPSLATE_ORE = registerBlock("tier_1_essence_deepslate_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).destroyTime(0.2f), UniformInt.of(3,6)));
+    public static final RegistryObject<Block> TIER_1_ESSENCE_DEEPSLATE_ORE = registerBlock("tier_1_essence_deepslate_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE), UniformInt.of(3,6)));
     //endregion
 
     //region Essence Ores Nether
-    public static final RegistryObject<Block> TIER_1_ESSENCE_NETHER_ORE = registerBlock("tier_1_essence_nether_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).destroyTime(0.2f), UniformInt.of(3,6)));
+    public static final RegistryObject<Block> TIER_1_ESSENCE_NETHER_ORE = registerBlock("tier_1_essence_nether_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE), UniformInt.of(3,6)));
     //endregion
 
     //region Essence Ores End
-    public static final RegistryObject<Block> TIER_1_ESSENCE_END_ORE = registerBlock("tier_1_essence_end_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).destroyTime(0.2f), UniformInt.of(3,6)));
+    public static final RegistryObject<Block> TIER_1_ESSENCE_END_ORE = registerBlock("tier_1_essence_end_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE), UniformInt.of(3,6)));
     //endregion
+    //endregion
+
+    //region Crop Blocks
+    public static final RegistryObject<Block> TIER_1_ESSENCE_CROP = registerBlock("tier_1_essence_CROP", () -> new EssenceCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT), 4, Moditems.TIER_1_SEEDS.get()));
     //endregion
 
 

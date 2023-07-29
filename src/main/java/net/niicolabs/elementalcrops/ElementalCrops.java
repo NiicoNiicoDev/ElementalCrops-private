@@ -2,6 +2,8 @@ package net.niicolabs.elementalcrops;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -122,6 +124,8 @@ public class ElementalCrops
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.TIER_1_ESSENCE_CROP.get(), RenderType.cutout());
         }
     }
 }

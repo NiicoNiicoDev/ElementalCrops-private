@@ -4,7 +4,14 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.niicolabs.elementalcrops.item.Custom.ModBlocks;
 import net.niicolabs.elementalcrops.item.Moditems;
@@ -38,17 +45,21 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         add(ModBlocks.TIER_1_ESSENCE_END_ORE.get(), createOreDrop(ModBlocks.TIER_1_ESSENCE_END_ORE.get(), Moditems.TIER_1_ESSENCE.get()));*/
 
         add(ModBlocks.TIER_1_ESSENCE_ORE.get(),
-                (block) -> createOreDrop(ModBlocks.TIER_1_ESSENCE_ORE.get(), Moditems.TIER_1_ESSENCE.get()));
+                (block) -> createEssenceOreDrop(ModBlocks.TIER_1_ESSENCE_ORE.get(), Moditems.TIER_1_ESSENCE.get()));
         add(ModBlocks.TIER_1_ESSENCE_DEEPSLATE_ORE.get(),
-                (block) -> createOreDrop(ModBlocks.TIER_1_ESSENCE_DEEPSLATE_ORE.get(), Moditems.TIER_1_ESSENCE.get()));
+                (block) -> createEssenceOreDrop(ModBlocks.TIER_1_ESSENCE_DEEPSLATE_ORE.get(), Moditems.TIER_1_ESSENCE.get()));
         add(ModBlocks.TIER_1_ESSENCE_NETHER_ORE.get(),
-                (block) -> createOreDrop(ModBlocks.TIER_1_ESSENCE_NETHER_ORE.get(), Moditems.TIER_1_ESSENCE.get()));
+                (block) -> createEssenceOreDrop(ModBlocks.TIER_1_ESSENCE_NETHER_ORE.get(), Moditems.TIER_1_ESSENCE.get()));
         add(ModBlocks.TIER_1_ESSENCE_END_ORE.get(),
-                (block) -> createOreDrop(ModBlocks.TIER_1_ESSENCE_END_ORE.get(), Moditems.TIER_1_ESSENCE.get()));
+                (block) -> createEssenceOreDrop(ModBlocks.TIER_1_ESSENCE_END_ORE.get(), Moditems.TIER_1_ESSENCE.get()));
     }
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get).toList();
+        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+    }
+
+    protected LootTable.Builder createEssenceOreDrop(Block pBlock, Item pItem) {
+        return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(pItem).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 4.0F))).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 }

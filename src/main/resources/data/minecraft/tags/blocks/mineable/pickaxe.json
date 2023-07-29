@@ -1,0 +1,21 @@
+{
+  "values":
+  [
+    "elementalcrops:tier_1_essence_block",
+    "elementalcrops:tier_2_essence_block",
+    "elementalcrops:tier_3_essence_block",
+    "elementalcrops:tier_4_essence_block",
+    "elementalcrops:tier_5_essence_block",
+    "elementalcrops:tier_6_essence_block",
+    "elementalcrops:tier_7_essence_block",
+    "elementalcrops:tier_8_essence_block",
+    "elementalcrops:tier_9_essence_block",
+    "elementalcrops:tier_10_essence_block",
+    "elementalcrops:tier_11_essence_block",
+    "elementalcrops:tier_12_essence_block",
+    "elementalcrops:tier_1_essence_ore",
+    "elementalcrops:tier_1_essence_deepslate_ore",
+    "elementalcrops:tier_1_essence_nether_ore",
+    "elementalcrops:tier_1_essence_end_ore"
+  ]
+}
