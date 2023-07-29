@@ -9,12 +9,16 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.registries.RegistryObject;
 import net.niicolabs.elementalcrops.ElementalCrops;
 import net.niicolabs.elementalcrops.item.Custom.ConversionCrystalItem;
+import net.niicolabs.elementalcrops.item.Custom.ModBlocks;
 import net.niicolabs.elementalcrops.item.Moditems;
 
+import javax.annotation.Nullable;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider  extends RecipeProvider implements IConditionBuilder
@@ -89,6 +93,21 @@ public class ModRecipeProvider  extends RecipeProvider implements IConditionBuil
         CrystalRecipe(2, Moditems.BASIC_CONVERSION_CRYSTAL.get(), Moditems.TIER_4_ESSENCE.get(), Items.NETHERITE_BLOCK, 1, consumer);
 
         //endregion
+
+        //region Block Recipes
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_1_ESSENCE, ModBlocks.TIER_1_ESSENCE_BLOCK);
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_2_ESSENCE, ModBlocks.TIER_2_ESSENCE_BLOCK);
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_3_ESSENCE, ModBlocks.TIER_3_ESSENCE_BLOCK);
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_4_ESSENCE, ModBlocks.TIER_4_ESSENCE_BLOCK);
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_5_ESSENCE, ModBlocks.TIER_5_ESSENCE_BLOCK);
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_6_ESSENCE, ModBlocks.TIER_6_ESSENCE_BLOCK);
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_7_ESSENCE, ModBlocks.TIER_7_ESSENCE_BLOCK);
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_8_ESSENCE, ModBlocks.TIER_8_ESSENCE_BLOCK);
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_9_ESSENCE, ModBlocks.TIER_9_ESSENCE_BLOCK);
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_10_ESSENCE, ModBlocks.TIER_10_ESSENCE_BLOCK);
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_11_ESSENCE, ModBlocks.TIER_11_ESSENCE_BLOCK);
+        BlockFromEssenceRecipe(consumer, Moditems.TIER_12_ESSENCE, ModBlocks.TIER_12_ESSENCE_BLOCK);
+        //endregion
     }
 
     private void EssenceRecipe(int outEssenceTier, int inCrystalTier, Consumer<FinishedRecipe> consumer )
@@ -123,7 +142,10 @@ public class ModRecipeProvider  extends RecipeProvider implements IConditionBuil
 
     }
 
-
+    private void BlockFromEssenceRecipe(Consumer<FinishedRecipe> consumer, RegistryObject<Item> inItem, RegistryObject<Block> craftResult)
+    {
+        nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, inItem.get(), RecipeCategory.MISC, craftResult.get());
+    }
 
     private ConversionCrystalItem GetCrystalItemFromTier(int crystalTier)
     {

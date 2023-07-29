@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "elementalcrops:block/tier_3_essence_block"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:tier_6_essence_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tier_6_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementalcrops:tier_6_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_tier_6_essence",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:tier_6_essence_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

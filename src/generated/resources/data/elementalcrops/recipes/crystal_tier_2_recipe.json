@@ -6,10 +6,10 @@
       "item": "minecraft:netherite_block"
     },
     "C": {
-      "item": "elementalcrops:crystals/basic_conversion_crystal"
+      "item": "elementalcrops:basic_conversion_crystal"
     },
     "E": {
-      "item": "elementalcrops:essence/base/tier_4_essence"
+      "item": "elementalcrops:tier_4_essence"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "BEB"
   ],
   "result": {
-    "item": "elementalcrops:crystals/advanced_conversion_crystal"
+    "item": "elementalcrops:advanced_conversion_crystal"
   },
   "show_notification": true
 }

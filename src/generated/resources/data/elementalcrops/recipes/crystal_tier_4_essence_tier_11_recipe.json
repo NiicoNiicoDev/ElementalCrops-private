@@ -3,34 +3,34 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "elementalcrops:essence/base/tier_10_essence"
+      "item": "elementalcrops:tier_10_essence"
     },
     {
-      "item": "elementalcrops:essence/base/tier_10_essence"
+      "item": "elementalcrops:tier_10_essence"
     },
     {
-      "item": "elementalcrops:essence/base/tier_10_essence"
+      "item": "elementalcrops:tier_10_essence"
     },
     {
-      "item": "elementalcrops:essence/base/tier_10_essence"
+      "item": "elementalcrops:tier_10_essence"
     },
     {
-      "item": "elementalcrops:essence/base/tier_10_essence"
+      "item": "elementalcrops:tier_10_essence"
     },
     {
-      "item": "elementalcrops:essence/base/tier_10_essence"
+      "item": "elementalcrops:tier_10_essence"
     },
     {
-      "item": "elementalcrops:essence/base/tier_10_essence"
+      "item": "elementalcrops:tier_10_essence"
     },
     {
-      "item": "elementalcrops:essence/base/tier_10_essence"
+      "item": "elementalcrops:tier_10_essence"
     },
     {
-      "item": "elementalcrops:crystals/perfected_conversion_crystal"
+      "item": "elementalcrops:perfected_conversion_crystal"
     }
   ],
   "result": {
-    "item": "elementalcrops:essence/base/tier_11_essence"
+    "item": "elementalcrops:tier_11_essence"
   }
 }

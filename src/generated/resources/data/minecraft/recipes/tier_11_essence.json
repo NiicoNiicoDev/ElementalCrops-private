@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "elementalcrops:tier_11_essence_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "elementalcrops:tier_11_essence"
+  }
+}

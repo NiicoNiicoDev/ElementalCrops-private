@@ -4,6 +4,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -19,6 +20,7 @@ public class ModCreativeModeTabs {
                     CreativeModeTab.builder().icon(() -> new ItemStack(Moditems.TIER_1_ESSENCE.get()))
                             .title(Component.translatable("creativetab.elementalcrops.tab"))
                             .displayItems((pParameters, pOutput) -> {
+
                                 pOutput.accept(Moditems.TIER_1_ESSENCE.get());
                                 pOutput.accept(Moditems.TIER_2_ESSENCE.get());
                                 pOutput.accept(Moditems.TIER_3_ESSENCE.get());
@@ -45,13 +47,29 @@ public class ModCreativeModeTabs {
                                 pOutput.accept(Moditems.TIER_11_SEEDS.get());
                                 pOutput.accept(Moditems.TIER_12_SEEDS.get());
 
+                                pOutput.accept(ModBlocks.TIER_1_ESSENCE_BLOCK.get());
+                                pOutput.accept(ModBlocks.TIER_2_ESSENCE_BLOCK.get());
+                                pOutput.accept(ModBlocks.TIER_3_ESSENCE_BLOCK.get());
+                                pOutput.accept(ModBlocks.TIER_4_ESSENCE_BLOCK.get());
+                                pOutput.accept(ModBlocks.TIER_5_ESSENCE_BLOCK.get());
+                                pOutput.accept(ModBlocks.TIER_6_ESSENCE_BLOCK.get());
+                                pOutput.accept(ModBlocks.TIER_7_ESSENCE_BLOCK.get());
+                                pOutput.accept(ModBlocks.TIER_8_ESSENCE_BLOCK.get());
+                                pOutput.accept(ModBlocks.TIER_9_ESSENCE_BLOCK.get());
+                                pOutput.accept(ModBlocks.TIER_10_ESSENCE_BLOCK.get());
+                                pOutput.accept(ModBlocks.TIER_11_ESSENCE_BLOCK.get());
+                                pOutput.accept(ModBlocks.TIER_12_ESSENCE_BLOCK.get());
+
+                                pOutput.accept(ModBlocks.TIER_1_ESSENCE_ORE.get());
+                                pOutput.accept(ModBlocks.TIER_1_ESSENCE_DEEPSLATE_ORE.get());
+                                pOutput.accept(ModBlocks.TIER_1_ESSENCE_NETHER_ORE.get());
+                                pOutput.accept(ModBlocks.TIER_1_ESSENCE_END_ORE.get());
+
                                 pOutput.accept(Moditems.BASIC_CONVERSION_CRYSTAL.get());
                                 pOutput.accept(Moditems.ADVANCED_CONVERSION_CRYSTAL.get());
                                 pOutput.accept(Moditems.MASTER_CONVERSION_CRYSTAL.get());
                                 pOutput.accept(Moditems.PERFECTED_CONVERSION_CRYSTAL.get());
                                 pOutput.accept(Moditems.PRIMAL_CONVERSION_CRYSTAL.get());
-
-                                pOutput.accept(ModBlocks.TIER_1_ESSENCE_BLOCK.get());
 
                             })
                             .build());

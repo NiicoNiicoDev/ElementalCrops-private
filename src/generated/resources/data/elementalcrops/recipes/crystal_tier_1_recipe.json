@@ -9,7 +9,7 @@
       "item": "minecraft:diamond"
     },
     "E": {
-      "item": "elementalcrops:essence/base/tier_1_essence"
+      "item": "elementalcrops:tier_1_essence"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "BEB"
   ],
   "result": {
-    "item": "elementalcrops:crystals/basic_conversion_crystal"
+    "item": "elementalcrops:basic_conversion_crystal"
   },
   "show_notification": true
 }
